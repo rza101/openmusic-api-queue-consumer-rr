@@ -1,0 +1,26 @@
+{
+  "name": "openmusic-api-queue-consumer",
+  "version": "1.0.0",
+  "description": "Proyek Belajar Fundamental Aplikasi Back-End Dicoding (Queue Consumer)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate",
+    "start-dev": "nodemon ./src/index.js",
+    "start-prod": "NODE_env=production node .src/index.js"
+  },
+  "author": "Rheza Rijaya",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.3",
+    "pg": "^8.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  }
+}
